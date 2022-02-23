@@ -9,7 +9,7 @@ namespace Palindrome.Tests
     [TestMethod]
     public void CheckPalindrome_ReturnInput_False()
     {
-      OttoIsAPalindrome testPalindrome = new OttoIsAPalindrome ("Otter");
+      OttoIsAPalindrome testPalindrome = new OttoIsAPalindrome ("otter");
       Assert.AreEqual(false, testPalindrome.CheckPalindrome());
     }
 

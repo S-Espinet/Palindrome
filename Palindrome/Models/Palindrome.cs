@@ -13,11 +13,10 @@ namespace Palindrome
 
     public bool CheckPalindrome()
     {
-      char[] charArray = Input.ToCharArray();
-      char[] reversal = new char[charArray.Length];
-      Array.Copy(charArray, reversal, charArray.Length);
-      Array.Reverse(reversal);
-      if (charArray == reversal)
+      char[] charArray = Input.ToUpper().ToCharArray();
+      Array.Reverse(charArray);
+      string stringedCharArray = String.Join("", charArray);
+      if (Input.ToUpper() == stringedCharArray)
       {
         return true;
       }
