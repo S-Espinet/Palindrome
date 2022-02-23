@@ -4,12 +4,20 @@ using Palindrome;
 namespace Palindrome.Tests
 {
   [TestClass]
-  public class 
+  public class OttoIsAPalindromeTests
   {
     [TestMethod]
-    public void 
+    public void CheckPalindrome_ReturnInput_False()
     {
-      
+      OttoIsAPalindrome testPalindrome = new OttoIsAPalindrome ("Otter");
+      Assert.AreEqual(false, testPalindrome.CheckPalindrome());
+    }
+
+    [TestMethod]
+    public void CheckPalindrome_Checks_True()
+    {
+      OttoIsAPalindrome testPalindrome = new OttoIsAPalindrome("otto");
+      Assert.AreEqual(true, testPalindrome.CheckPalindrome());
     }
   }
 }
